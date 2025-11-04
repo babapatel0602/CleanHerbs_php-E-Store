@@ -1,0 +1,36 @@
+Welcome to the Clean Herbs project!
+
+Here is how to set up the project on your own computer in 5 minutes.
+
+REQUIREMENTS:
+You must have XAMPP installed (or any other local server with PHP and MySQL).
+
+STEP 1: SET UP THE FILES
+
+Copy the entire cleanherbs folder from the pen drive.
+
+Paste it into your XAMPP installation's htdocs folder.
+(The final path should be C:\xampp\htdocs\cleanherbs)
+
+STEP 2: SET UP THE DATABASE
+
+Open your XAMPP Control Panel and Start both "Apache" and "MySQL".
+
+Open your web browser and go to: http://localhost/phpmyadmin/
+
+Click the "Import" tab at the top of the page.
+
+Click the "Choose File" button.
+
+Find and select the database_setup.sql file (which is inside the cleanherbs folder).
+
+Scroll to the bottom of the Import page and click the "Go" button.
+
+That's it! The database cleanherbs_db will be created, all tables will be set up, and the sample products will be inserted.
+
+STEP 3: RUN THE PROJECT
+
+You can now access the website by visiting:
+http://localhost/cleanherbs/
+
+To log in as an admin, you will first need to register a normal user and then change their is_admin status from 0 to 1 in the users table.
