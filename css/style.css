@@ -1,0 +1,355 @@
+/* --- 1. Basic Reset & Typography --- */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- 2. Layout & Utility Classes --- */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+    padding-left: 50px;  /* Adds space on the left */
+    padding-right: 25px; /* Adds space on the right */
+}
+
+.btn {
+    display: inline-block;
+    background: #228B22;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none; /* For button elements */
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover {
+    background: #1e7a1e;
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 100%; /* Make submit button full-width */
+}
+
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* --- 3. Site Structure (Header & Footer) --- */
+header {
+    background: #ced5b9;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e7a1e; /* A nice green color */
+}
+header .logo a:hover {
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cart-count {
+    background: #ff0000;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%; /* Makes it a circle */
+    font-weight: bold;
+    vertical-align: top;
+    margin-left: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    background: #ced5b9;
+}
+
+/* --- 4. Page-Specific Components --- */
+
+/* --- Homepage (Hero & Product Grid) --- */
+.hero {
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+.product-grid-container {
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 1.5rem; /* Space between items */
+    text-align: left; /* Resets text-align for the grid items */
+}
+
+.product-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures image covers the space nicely */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.product-item h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.product-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* --- Forms (Login/Register/Checkout) --- */
+.form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding to work right */
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* --- Cart Page --- */
+.cart-container {
+    width: 90%;
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse; /* Merges cell borders */
+    margin-bottom: 2rem;
+}
+
+.cart-table th, .cart-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.cart-table th {
+    background: #f9f9f9;
+}
+
+.cart-product-info {
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-info img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.btn-remove {
+    color: #ff0000;
+    font-size: 0.9rem;
+}
+.btn-remove:hover {
+    text-decoration: underline;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.cart-quantity-form {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.btn-update {
+    padding: 0.5rem 0.75rem;
+    background: #0066cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.btn-update:hover {
+    background: #0056b3;
+}
+
+/* --- Checkout Page --- */
+.checkout-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    gap: 2rem;
+}
+
+.checkout-form {
+    flex: 2.2; /* Takes up 2/3 of the space */
+    min-width: 320px;
+}
+
+.order-summary {
+    flex: 1; /* Takes up 1/3 of the space */
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* --- Product Detail Page --- */
+.product-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail-description {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #228B22;
+    margin-bottom: 1.5rem;
+}
+
+.product-detail-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

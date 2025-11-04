@@ -1,0 +1,142 @@
+/* Styles specific to the admin panel */
+
+body {
+    background-color: #f4f4f4; /* A slightly different BG for admin */
+}
+
+.admin-header {
+    background: #30645c;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.admin-header .logo {
+    color: #9bd5a6;
+    font-size: 1.5rem;
+}
+
+.admin-header nav ul li a {
+    color: #fff;
+    font-weight: normal;
+}
+.admin-header nav ul li a:hover {
+    color: #ddd;
+}
+
+.admin-container {
+    background: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    min-height: 60vh;
+}
+
+.admin-footer {
+    background: #30645c;
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+/* --- Add this new code to the end of your file --- */
+
+/* --- Admin Tables --- */
+.admin-table-actions {
+    margin-bottom: 1.5rem;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background: #f4f4f4;
+}
+
+.admin-table img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.btn-action {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.btn-edit {
+    background: #0066cc;
+}
+.btn-delete {
+    background: #cc0000;
+}
+.btn-edit:hover { background: #0056b3; }
+.btn-delete:hover { background: #aa0000; }
+
+
+/* --- Admin Forms --- */
+.admin-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.admin-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.admin-form .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.admin-form textarea.form-control {
+    min-height: 120px;
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #5a6268;
+}
+/* --- Add this new code to the end of your file --- */
+
+/* --- Order Details Page --- */
+.order-section {
+    background: #f9f9f9;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+}
+
+.order-section h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+.adminContainer
+{
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
